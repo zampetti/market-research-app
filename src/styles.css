@@ -1,0 +1,18 @@
+.appWrapper {
+    border: 5px solid black;
+    display: flex;
+}
+
+.mapDiv {
+    border-right: 1px solid gray;
+    width: 50%;
+}
+
+.infoDiv {
+    /* border: 2px solid gray; */
+    width: 25%;
+}
+
+h1 {
+    padding-left: 2%;
+}
