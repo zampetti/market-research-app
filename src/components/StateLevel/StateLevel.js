@@ -4,7 +4,7 @@ import StateInfo from './StateInfo';
 
 import "../../styles.css";
 
-const StateLevel = () => {
+const StateLevel = ({degree}) => {
     const [selection, setSelection] = useState("")
     
     const selectionCallback = (data) => {
@@ -15,11 +15,11 @@ const StateLevel = () => {
         <>
             <h1>State Level</h1>
             <div className="mapDiv">
-                <StateMap selection={selectionCallback} />
+                <StateMap selection={selectionCallback} degree={degree} />
             </div>
-            {/* <div className="infoDiv">
+            <div className="infoDiv">
                 <StateInfo selection={selection} />
-            </div> */}
+            </div>
         </>
     )
 }
